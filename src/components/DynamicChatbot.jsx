@@ -555,7 +555,7 @@ function DynamicChatbot() {
             {/* Add styles to the document properly */}
             <style dangerouslySetInnerHTML={{ __html: animationStyles }} />
 
-            <div className="bg-[#223F38] p-4 shadow fixed w-full flex justify-between items-center">
+            <div className="bg-[#223F38] p-4 z-50 shadow fixed w-full flex justify-between items-center">
                 <Link to="/">
                     <h2 className="text-xl text-white font-semibold font-mono tracking-wider">RightHomeAI</h2>
                 </Link>
