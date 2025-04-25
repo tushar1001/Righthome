@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-// import { Heart, MapPin, Maximize2 } from 'lucide-react';
+import { Heart, MapPin, Maximize2 } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -498,7 +498,7 @@ function DynamicChatbot() {
                     onClick={() => setIsFavorite(!isFavorite)}
                     className="absolute top-3 right-3 p-2 bg-white rounded-full shadow-sm hover:bg-gray-50 transition-transform hover:scale-110"
                 >
-                    {/* <Heart size={18} fill={isFavorite ? "#ef4444" : "none"} color={isFavorite ? "#ef4444" : "#223F38"} /> */}
+                    <Heart size={18} fill={isFavorite ? "#ef4444" : "none"} color={isFavorite ? "#ef4444" : "#223F38"} />
                 </button>
                 </div>
         
@@ -508,7 +508,7 @@ function DynamicChatbot() {
                 <div className="flex justify-between items-center mb-2">
                     <div className="text-lg font-bold text-[#223F38]">{formatPrice(property.Price)}</div>
                     <div className="flex items-center text-[#223F38] text-xs">
-                    {/* <Maximize2 size={12} className="mr-1" /> */}
+                    <Maximize2 size={12} className="mr-1" />
                     {property.Area}
                     </div>
                 </div>
@@ -516,7 +516,7 @@ function DynamicChatbot() {
                 {/* Property name and location */}
                 <h2 className="text-md font-semibold text-[#223F38] mb-1">{property.Name}</h2>
                 <div className="flex items-center text-[#223F38] text-xs mb-4">
-                    {/* <MapPin size={12} className="mr-1" /> */}
+                    <MapPin size={12} className="mr-1" />
                     {property.Location}
                 </div>
         
