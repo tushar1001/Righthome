@@ -551,11 +551,11 @@ function DynamicChatbot() {
         };  
 
     return (
-        <div className="flex flex-col h-screen max-w-2xl mx-auto bg-[#f0f8ff]">
+        <div className="flex flex-col items-center h-screen max-w-2xl mx-auto bg-[#f0f8ff] overflow-hidden">
             {/* Add styles to the document properly */}
             <style dangerouslySetInnerHTML={{ __html: animationStyles }} />
 
-            <div className="bg-[#223F38] p-4 z-50 shadow fixed w-full flex justify-between items-center">
+            <div className="bg-[#223F38] p-4 z-50 shadow w-full fixed flex justify-between items-center">
                 <Link to="/">
                     <h2 className="text-xl text-white font-semibold font-mono tracking-wider">RightHomeAI</h2>
                 </Link>
@@ -567,7 +567,7 @@ function DynamicChatbot() {
                 </button>
             </div>
 
-            <div className="flex-1 overflow-auto p-4 space-y-4">
+            <div className="flex-1 w-full mt-24 overflow-auto p-4 space-y-4">
                 {/* Debug Panel */}
                 {/* <div className="mb-4 p-2 bg-[#223F38] text-xs rounded-lg text-white font-poppins shadow-md">
                     <h1 className='text-2xl font-semibold text-center underline'>Debug Panel</h1>
@@ -713,7 +713,7 @@ function DynamicChatbot() {
             </div>
 
             {/* Input area */}
-            <form onSubmit={handleInputSubmit} className="bg-[#f0f8ff] p-4 border-t-2 border-[#223F38] font-mono">
+            <form onSubmit={handleInputSubmit} className="bg-[#f0f8ff] p-4 border-t-2 border-[#223F38] w-full font-mono">
                 <div className="flex space-x-2">
                     <input
                         type="text"
